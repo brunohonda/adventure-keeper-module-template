@@ -1,0 +1,16 @@
+{
+  "starter": {
+    "tabs": {
+      "stats": "Additional Attributes",
+      "campaignSettings": "Campaign Rules"
+    },
+    "fields": {
+      "heroPoints": "Hero Points",
+      "reputation": "Reputation",
+      "alignment": "Alignment",
+      "dangerLevel": "Danger Level",
+      "customCalendar": "Custom Calendar",
+      "allowGritRest": "Gritty Rest Variant"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Character Extension Schema",
+  "description": "Schema de exemplo para extensão de fichas de personagens com estatísticas customizadas",
+  "type": "object",
+  "properties": {
+    "heroPoints": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5,
+      "default": 1,
+      "title": "starter.fields.heroPoints"
+    },
+    "reputation": {
+      "type": "integer",
+      "minimum": -100,
+      "maximum": 100,
+      "default": 0,
+      "title": "starter.fields.reputation"
+    },
+    "alignment": {
+      "type": "string",
+      "enum": [
+        "lawful_good",
+        "neutral_good",
+        "chaotic_good",
+        "lawful_neutral",
+        "true_neutral",
+        "chaotic_neutral",
+        "lawful_evil",
+        "neutral_evil",
+        "chaotic_evil",
+        "unaligned"
+      ],
+      "default": "true_neutral",
+      "title": "starter.fields.alignment"
+    },
+    "customAttributes": {
+      "type": "object",
+      "properties": {
+        "strength": { "type": "integer", "default": 10 },
+        "dexterity": { "type": "integer", "default": 10 },
+        "constitution": { "type": "integer", "default": 10 },
+        "intelligence": { "type": "integer", "default": 10 },
+        "wisdom": { "type": "integer", "default": 10 },
+        "charisma": { "type": "integer", "default": 10 }
+      },
+      "required": [
+        "strength",
+        "dexterity",
+        "constitution",
+        "intelligence",
+        "wisdom",
+        "charisma"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": ["heroPoints", "reputation", "alignment"],
+  "additionalProperties": false
+}

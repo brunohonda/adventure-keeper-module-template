@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Campaign Extension Schema",
+  "description": "Schema de exemplo para configurações mecânicas associadas à campanha",
+  "type": "object",
+  "properties": {
+    "dangerLevel": {
+      "type": "string",
+      "enum": ["low", "standard", "gritty", "deadly"],
+      "default": "standard",
+      "title": "starter.fields.dangerLevel"
+    },
+    "customCalendar": {
+      "type": "string",
+      "maxLength": 100,
+      "default": "Harptos",
+      "title": "starter.fields.customCalendar"
+    },
+    "allowGritRest": {
+      "type": "boolean",
+      "default": false,
+      "title": "starter.fields.allowGritRest"
+    }
+  },
+  "required": ["dangerLevel"],
+  "additionalProperties": false
+}

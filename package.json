@@ -1,0 +1,29 @@
+{
+  "name": "adventure-keeper-module-template",
+  "version": "1.0.0",
+  "description": "Official starter kit and template for Adventure Keeper modules",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "prettier --check \"**/*.{json,ts,md,yml}\"",
+    "lint:fix": "prettier --write \"**/*.{json,ts,md,yml}\"",
+    "validate": "node scripts/validate-manifest.mjs"
+  },
+  "keywords": [
+    "adventure-keeper",
+    "tabletop-rpg",
+    "module-template",
+    "json-schema"
+  ],
+  "author": "Adventure Keeper Team",
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}

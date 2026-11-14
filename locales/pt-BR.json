@@ -1,0 +1,16 @@
+{
+  "starter": {
+    "tabs": {
+      "stats": "Atributos Adicionais",
+      "campaignSettings": "Regras da Campanha"
+    },
+    "fields": {
+      "heroPoints": "Pontos de Herói",
+      "reputation": "Reputação",
+      "alignment": "Tendência",
+      "dangerLevel": "Nível de Perigo",
+      "customCalendar": "Calendário Customizado",
+      "allowGritRest": "Descanso Realista"
+    }
+  }
+}

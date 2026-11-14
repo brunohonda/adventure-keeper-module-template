@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developers.adventurekeeper.com.br/schemas/v1/module.json",
+  "id": "community.starter-module",
+  "name": "Adventure Keeper Starter Module",
+  "version": "1.0.0",
+  "description": "Template oficial para criação de módulos declarativos de entidades e campanhas para o Adventure Keeper.",
+  "author": {
+    "name": "Comunidade Adventure Keeper",
+    "email": "community@adventurekeeper.com.br",
+    "url": "https://developers.adventurekeeper.com.br"
+  },
+  "license": "MIT",
+  "compatibility": {
+    "minimumCoreVersion": "1.0.0",
+    "verifiedCoreVersion": "1.4.0"
+  },
+  "defaultLocale": "pt-BR",
+  "supportedLocales": ["pt-BR", "en"],
+  "entityExtensions": [
+    {
+      "entityType": "character",
+      "schema": "./schemas/character-extension.json",
+      "ui": {
+        "tabTitleKey": "starter.tabs.stats",
+        "icon": "shield"
+      }
+    }
+  ],
+  "campaignExtensions": [
+    {
+      "schema": "./schemas/campaign-extension.json",
+      "ui": {
+        "sectionTitleKey": "starter.tabs.campaignSettings"
+      }
+    }
+  ]
+}
